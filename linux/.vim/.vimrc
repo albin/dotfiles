@@ -19,6 +19,7 @@ set undolevels=1000
 set wildmode=list:longest
 
 set ruler		" show the cursor position all the time
+set number		" show line numbers
 set showcmd		" display incomplete commands
 set incsearch	" do incremental searching
 
