@@ -1,22 +1,32 @@
-# dotfiles 
+# dotfiles
 
-## Terminal theme
-`linux/.Xresources`  
-`windows/putty_colors_default_settings.reg` - replaces colors for default settings
+## Configuration
 
-## tmux
-.tmux.conf
+### bash
+`config/.bash_aliases`
 
-## vim
-.vim/
+### tmux
+`.tmux.conf`
 
-## bash
+### vim
+`config/.vim/`  
+`config/.vim/.vimrc`
 
-## Linux install
-```
-ln -s dotfiles/linux/.vim
-ln -s .vim/.vimrc
-mkdir .vim/backup
+### Alacritty
+`config/.alacritty.yml`
 
-ln -s dotfiles/linux/.tmux.conf
-```
+### X
+`config/.Xresources`
+
+### PuTTY
+`config/putty_colors_default_settings.reg` - replaces colors for default settings
+
+## Setup
+
+### Linux
+`# ./setup.sh`
+
+### Linux (manual)
+1. Install all packages
+2. Link all files
+3. Create a backup folder for vim (`~/.vim/backup`)
