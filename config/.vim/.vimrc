@@ -55,4 +55,5 @@ set incsearch " ...dynamically as they are typed.
 set backupdir=~/.vim/backup//
 set directory=~//
 
-
+" Clear search (and still redraw the screen as normal)
+nnoremap <silent> <C-L> :let @/=""<CR><C-L>
