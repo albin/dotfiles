@@ -32,12 +32,27 @@ set smartcase
 set tabstop=4
 set shiftwidth=4
 
+" keep some lines above and below cursor
+set scrolloff=5
+
+" show word wrap breaks (using let allows quotes, prevents fuckups with automatic trailing whitespace removal)
+" let &showbreak="↪ "
+let &showbreak="↳ "
+
+" show tabs, trailing spaces, nbsp, and arrows for lines that extend beyond the screen
+set list
+set listchars=tab:→\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
+" with end of line character
+" set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
-  set mouse=a
+	set mouse=a
 endif
 
 " Switch syntax highlighting on, when the terminal has colors
