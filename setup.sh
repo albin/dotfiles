@@ -58,7 +58,7 @@ aptPackages() {
 dnfPackages() {
 	echo "Installing packages from dnf"
 
-	# sudo dnf install
+	sudo dnf install dnsutils tmux vim exa -y
 }
 
 installPackages() {
